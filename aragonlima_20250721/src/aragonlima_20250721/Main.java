@@ -27,8 +27,18 @@ public class Main {
         System.out.println("Grados fahrenheit a kelvin: " + fahrenheit_a_kelvin() + " K");
         
         System.out.println("Grados fahrenheit a rankine: " + fahrenheit_a_rankine() + " R");
+
+        System.out.println("Grados kelvin a celsius " + kelvin_a_celsius() + " C");
         
+        System.out.println("Grados kelvin a fahrenheit " + kelvin_a_fahrenheit() + " F");
         
+        System.out.println("Grados kelvin a rankine " + kelvin_a_rankine() + " R");
+        
+        System.out.println("Grados rankine a celsius " + rankine_a_celsius() + " C");
+        
+        System.out.println("Grados rankine a fahrenheit " + rankine_a_fahrenheit() + " F");
+        
+        System.out.println("Grados rankine a kelvin " + rankine_a_kelvin() + " K");
         
     }
     
@@ -75,5 +85,49 @@ public class Main {
        return grados_fahrenheit + 459.67;
     }
 
-    public static double 
+    public static double kelvin_a_celsius(){
+        double grados_kelvin = 50.0;
+        
+        return grados_kelvin - 273.15;
+    }
+    
+    
+    public static double kelvin_a_fahrenheit(){
+        double grados_kelvin = 50.0;
+        
+        return (((grados_kelvin - 273.15)*9)/5)+32;
+    }
+    
+    
+    
+    public static double kelvin_a_rankine(){
+        double grados_kelvin = 50.0;
+        
+        return grados_kelvin * 1.8;
+    }
+    
+    
+    public static double rankine_a_celsius(){
+        double grados_rankine = 50.0;
+        
+        return ((grados_rankine - 491.67)*5)/9;
+    }
+    
+    
+    
+    
+    public static double rankine_a_fahrenheit(){
+        double grados_rankine = 50.0;
+        
+        return grados_rankine - 459.67;
+    }
+    
+    
+    
+    
+    public static double rankine_a_kelvin(){
+        double grados_rankine = 50.0;
+        
+        return (grados_rankine *5) /9;
+    }
 }
